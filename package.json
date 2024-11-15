@@ -1,0 +1,37 @@
+{
+  "name": "pw-hbh",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test:dev:admin": "cross-env ENV=dev USER_TYPE=GlobalAdmin npx playwright test",
+    "test:test:admin": "cross-env ENV=test USER_TYPE=GlobalAdmin npx playwright test",
+    "test:dev:countryadmin": "cross-env ENV=dev USER_TYPE=CountryAdmin npx playwright test",
+    "test:test:countryadmin": "cross-env ENV=test USER_TYPE=CountryAdmin npx playwright test",
+    "test:dev:readonlycounrtyadmin": "cross-env ENV=dev USER_TYPE=ReadOnlyCountryAdmin npx playwright test",
+    "test:test:readonlycounrtyadmin": "cross-env ENV=test USER_TYPE=ReadOnlyCountryAdmin npx playwright test",
+    "test:dev:companyadmin": "cross-env ENV=dev USER_TYPE=CompanyAdmin npx playwright test",
+    "test:test:companyadmin": "cross-env ENV=test USER_TYPE=CompanyAdmin npx playwright test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.48.2",
+    "@types/node": "^22.8.7",
+    "@types/node-cron": "^3.0.11",
+    "cross-env": "^7.0.3",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.3"
+  },
+  "directories": {
+    "test": "tests"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "node-cron": "^3.0.3",
+    "playwright": "^1.48.2",
+    "playwright-core": "^1.48.2",
+    "undici-types": "^6.19.8"
+  },
+  "description": ""
+}
